@@ -18,11 +18,17 @@ font-weight: bolder;
  #p2{
     font-style: italic;
  }
-/* img{
+img{
     height: 500px;
-    width: 500px;
+    width: 100%;
     border-radius:500px;
-} */
+}
+@media(min-width: 600px){
+    img{
+        height: auto;
+        width: 500px
+    }
+}
 video{height: 500px;
     width: 500px;;
     border-radius:100px;
@@ -50,13 +56,20 @@ button:hover{
 }
 button{
     padding: 10px;
-    background-color: red;
+    background-color: rgb(178, 204, 76);
 
 }
 nav{
     display: flex;
     flex-direction: row;
     gap: 100px;
+}
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction:row;
+        gap:100px;
+    }
 }
 .grid{
     display: grid;
@@ -81,12 +94,12 @@ nav{
 #f{
     grid-row: 2/3;
 } */
-.naruto{
+.grid{
     display: grid;
     grid-template-columns: 50% 50%;
 
 }
-/* #g{
+#g{
     grid-row: 1/2;
 }
 #h{
@@ -103,4 +116,4 @@ nav{
 }
 #l{
     grid-row: 2/3;
-} */
+}
