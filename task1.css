@@ -1,0 +1,72 @@
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: rgb(193, 34, 34);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    font: italic;
+}
+
+img {
+    width: 300px;
+    border-radius: 50px;
+}
+
+video {
+    width: 50vw;
+    padding: 10px;
+    background-color: blue;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: lightgray;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    opacity: 0.8;
+    
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;color: white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
